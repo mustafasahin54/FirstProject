@@ -1,0 +1,59 @@
+<resources>
+	<string name="hello">ChatMessage</string>
+    <string name="app_name">ChatMessage</string>
+    <string name="friend_list">Friend List</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="messaging">Messaging</string>
+    <string name="local_service_started">App service started</string>
+    <string name="local_service_stopped">App service stopped</string>
+	<string name="local_service_connected">local_service_connected</string>
+	<string name="OK">OK</string>
+	<string name="not_connected_to_service">Servise Bağlı değil Bu durumu yetkililerle görüşürüz.</string>
+
+    <!--
+     <string name="not_connected_to_service">Not connected to the service and
+	this is not supposed to happened so please inform this situation to
+	ahmetmermerkaya@hotmail.com</string>
+     -->
+	<string name="fill_both_username_and_password">Kullanıcı adı ve Şifre Boş olamaz</string>
+	<string name="make_sure_username_and_password_correct">Please make sure that
+	your username and password correct</string>
+	<string name="user_offline">This user is offline</string>
+	<string name="sign_up">Sign up</string>
+	<string name="exit_application">Çıkış</string>
+	<string name="password_again">Password(Tekrar):</string>
+	<string name="email">E-mail</string>
+	<string name="signup_fill_all_fields">Lütfen tüm alanları doldurunuz.</string>
+	<string name="signup_type_same_password_in_password_fields">Parola alanlarına aynı parolayı giriniz.</string>
+	<string name="signup_failed">Kayıt olma bilinmeyen bir nedenden dolayı başarısız oldu.</string>
+	<string name="signup_username_crashed">Kullanıcı adınız zaten alınmış, Başka bir kullanıcı adı alınız.</string>
+	<string name="signup_successfull">Kaydınız Başarıyla tamamlandı,\n Şimdi giriş yapabilirsiniz. </string>
+	<string name="username_and_password_length_short">Kullanıcı adı ve Şifre uzunluğu en az 5 karakter olmalı</string>
+	<string name="add_new_friend">Yeni Arkadaş Ekle</string>
+	<string name="no_friend">Hiçbir arkadaşınız yok,\n Menuden arkadaşlarınızı ekliyebilirsiniz.</string>
+	<string name="add">Ekle</string>
+	<string name="request_sent">Talebiniz gönderildi</string>
+	<string name="type_friend_username">Arkadaşınızın kullanıcı adını giriniz.</string>
+	<string name="new_friend_request_exist">Yeni arkadaş isteği</string>
+	<string name="projectName">ChatMessage</string>
+
+	<string name="approve_selected_friends">Approve Selecteds and Discard Others</string>
+	<string name="not_connected_to_network">İnternet erişiminiz yoktur.</string>
+	<string name="message_cannot_be_sent">Mesajınız gönderilemedi.</string>
+
+    <string name="login_btn_text">Log In</string>
+	<string name="login_facebook_btn_text">LOG IN WITH FACEBOOK</string>
+	<string name="register_btn_text">Register</string>
+	<string name="email_label_text">Username</string>
+	<string name="password_text_label">Password</string>
+	<string name="title_activity_chat">Chat</string>
+	<string name="title_activity_user_select">Chat With User</string>
+	<string name="message_hint">Message</string>
+	<string name="title_activity_map_view">Map</string>
+	<string name="title_activity_image_view">Image</string>
+	<string name="title_activity_video_view">Video</string>
+
+</resources>
