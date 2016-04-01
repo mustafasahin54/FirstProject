@@ -17,9 +17,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
+import android.provider.MediaStore;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -46,6 +48,7 @@ public class Messaging extends Activity {
 	private EditText messageText;
 	private EditText messageHistoryText;
 	private ImageButton sendMessageButton;
+	private Button imageButton;
 	private IAppManager imService;
 	private FriendInfo friend = new FriendInfo();
 	private LocalStorageHandler localstoragehandler; 
@@ -53,6 +56,8 @@ public class Messaging extends Activity {
 	ListView messageListView;
 	private ArrayList<UserMessage> messageList;
 	MessagingListViewAdapter adapter;
+
+    private static int RESULT_LOAD_IMAGE = 1;
 	
 	private ServiceConnection mConnection = new ServiceConnection() {
       
@@ -84,7 +89,7 @@ public class Messaging extends Activity {
 		messageText.requestFocus();			
 		
 		sendMessageButton = (ImageButton) findViewById(R.id.sendMessageButton);
-		
+		imageButton = (Button) findViewById(R.id.buttonImage);
 		Bundle extras = this.getIntent().getExtras();
 		
 		
@@ -125,7 +130,17 @@ public class Messaging extends Activity {
 			this.appendToMessageHistory(friend.userName , msg);
 			((NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel((friend.userName+msg).hashCode());
 		}
-		
+
+		imageButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+                startActivityForResult(i, RESULT_LOAD_IMAGE);
+			}
+		});
+
+
 		sendMessageButton.setOnClickListener(new OnClickListener(){
 			CharSequence message;
 			Handler handler = new Handler();
@@ -183,6 +198,30 @@ public class Messaging extends Activity {
 		});
 				
 	}
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = { MediaStore.Images.Media.DATA };
+
+            Cursor cursor = getContentResolver().query(selectedImage,
+                    filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            cursor.close();
+
+            /*ImageView imageView = (ImageView) findViewById(R.id.imgView);
+            imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));*/
+
+        }
+
+
+    }
 
 	@Override
 	protected Dialog onCreateDialog(int id) {

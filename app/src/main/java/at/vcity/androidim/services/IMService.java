@@ -34,7 +34,9 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.media.RingtoneManager;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.Binder;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
@@ -171,12 +173,13 @@ public class IMService extends Service implements IAppManager, IUpdateData {
 		String title = "ChatMessage (" + username + ")";
     	String text = username + ": " + 
      				((msg.length() < 5) ? msg : msg.substring(0, 5)+ "...");
-    	
+		Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
     	//NotificationCompat.Builder notification = new NotificationCompat.Builder(R.drawable.stat_sample, title,System.currentTimeMillis());
     	NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
     	.setSmallIcon(R.drawable.stat_sample)
     	.setContentTitle(title)
-    	.setContentText(text); 
+    	.setContentText(text)
+		.setSound(soundUri);
     	
     	
 

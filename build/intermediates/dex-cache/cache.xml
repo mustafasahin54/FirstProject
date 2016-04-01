@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
+        jar="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/pre-dexed/debug/classes-2ba086b8c06d1ac26865cfd13b0a5d4cb4c3e6a8.jar" />
+        <dex dex="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/pre-dexed/debug/classes-d66e35dbe6a2008378af24da1882276a69a41dcf.jar" />
     </item>
     <item
-        jar="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jar="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/pre-dexed/debug/classes-d65b97da6551c19ba6b668d033361fb827474456.jar" />
+        <dex dex="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/pre-dexed/debug/classes-3f276f5c3fe7c979de501394b7e050fcc55160c7.jar" />
     </item>
     <item
-        jar="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jar="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/pre-dexed/debug/classes-cf861e8b53b9e8794ea0362e84ed682ae8c7270b.jar" />
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-b9ec864df412af59d6998cae7bb115d9de92261a.jar" />
     </item>
     <item
         jar="/Users/akbank/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-2bc226a604fa1f894b7d4c24163dd3f7595b20f4.jar" />
+        <dex dex="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-2bc226a604fa1f894b7d4c24163dd3f7595b20f4.jar" />
     </item>
     <item
-        jar="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jar="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-8ce52584a82f6ec8abf1649617f9ed3250ae8e4d.jar" />
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/pre-dexed/debug/classes-91eafd82edeb31df2de1f66c4a695f14da757fc5.jar" />
     </item>
     <item
-        jar="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jar="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/Users/akbank/Desktop/ChatMessage.zip/app/build/intermediates/pre-dexed/debug/classes-793250c9ca030ade9b8cf4501d32db3f97d708f3.jar" />
+        <dex dex="/Users/akbank/Desktop/MustafaSahin/app/build/intermediates/pre-dexed/debug/classes-7b485fe7b92b966485a609cc70583e0165634396.jar" />
     </item>
 
 </items>

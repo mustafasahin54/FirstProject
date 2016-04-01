@@ -12,6 +12,8 @@ import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
@@ -202,10 +204,13 @@ public class FriendList extends ListActivity
 				for (int j = 0; j < unApprovedFriends.length; j++) {
 					tmp = tmp.concat(unApprovedFriends[j].userName).concat(",");			
 				}
+				Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
 				NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
 		    	.setSmallIcon(R.drawable.stat_sample)
-		    	.setContentTitle(getText(R.string.projectName/*R.string.new_friend_request_exist*/)); // arkadaş listesi başlık
-				/*Notification notification = new Notification(R.drawable.stat_sample, 
+		    	.setContentTitle(getText(R.string.projectName/*R.string.new_friend_request_exist*/))
+						.setSound(soundUri);		    	 // arkadaş listesi başlık
+				/*Notification notification = new Notification(R.drawable.stat_sample,
 						getText(R.string.new_friend_request_exist),
 						System.currentTimeMillis());*/
 
